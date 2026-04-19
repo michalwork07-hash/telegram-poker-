@@ -1,0 +1,34 @@
+{
+  "name": "telegram-poker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telegram Mini App — Texas Hold'em poker with TON chip payments",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:bot\"",
+    "dev:server": "node server/index.js",
+    "dev:bot": "node bot/bot.js",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "start": "NODE_ENV=production node server/index.js",
+    "install:all": "npm install && npm --prefix client install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "hoyle": "^0.2.2",
+    "node-fetch": "^2.7.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "node-uuid": "^1.4.8",
+    "pomelo-logger": "file:./server/lib/pomelo-logger-stub",
+    "socket.io": "^4.7.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0f1923; color: #fff; font-family: system-ui, sans-serif; height: 100dvh; overflow: hidden; }
+#root { height: 100dvh; display: flex; flex-direction: column; }

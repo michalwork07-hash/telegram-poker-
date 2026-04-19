@@ -1,4 +1,12 @@
 npm-debug.log
 .idea
-node_modules
-game-server/logs
+node_modules/
+client/node_modules/
+client/dist/
+game-server/logs/
+.env
+*.db
+.DS_Store
+poker.db
+poker.db-shm
+poker.db-wal
